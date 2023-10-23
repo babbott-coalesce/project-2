@@ -11,7 +11,7 @@ locations:
     mappingDefinitions:
       "6":
         database: COALESCE_SAMPLE_DATABASE
-        schema: TPCH_SF001
+        schema: BAD
 macros: {}
 packages: {}
 projects: {}
