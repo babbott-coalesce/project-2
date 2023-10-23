@@ -16,6 +16,24 @@ macros: {}
 packages: {}
 projects: {}
 stepTypes:
+  StepType-3:
+    id: "3"
+    isDisabled: false
+    metadata:
+      defaultStorageLocation: null
+      error: null
+      nodeMetadataSpec: |-
+        capitalized: New Type
+        short: NEW
+        tagColor: gray
+        plural: New Types
+      templates:
+        create:
+          templateString: wavasdf
+        run:
+          templateString: ""
+    name: bad type
+    version: 1
   StepType-Dimension:
     id: Dimension
     isDisabled: false
