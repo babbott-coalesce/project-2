@@ -1,0 +1,64 @@
+steps:
+  REGION-9c2caa3c-c460-45ef-99b3-57f2cba50db7:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5d2d6033-7cb1-4808-bca1-49cf0c1970da
+              stepCounter: 9c2caa3c-c460-45ef-99b3-57f2cba50db7
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e5a3c79b-10c9-4849-8431-d6a208009e7e
+              stepCounter: 9c2caa3c-c460-45ef-99b3-57f2cba50db7
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c445ec2c-19bb-4c9f-8967-7d3c4ff229db
+              stepCounter: 9c2caa3c-c460-45ef-99b3-57f2cba50db7
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 9c2caa3c-c460-45ef-99b3-57f2cba50db7

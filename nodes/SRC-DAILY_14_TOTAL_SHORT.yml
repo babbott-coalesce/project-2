@@ -1,0 +1,49 @@
+steps:
+  DAILY_14_TOTAL_SHORT-0b3b08fa-f0bb-48b7-8571-0f66279706f4:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 97b363ec-fd3a-48eb-ad83-9d35cfac6070
+              stepCounter: 0b3b08fa-f0bb-48b7-8571-0f66279706f4
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: V
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f120f843-09e7-419f-93ec-c4278795e3b4
+              stepCounter: 0b3b08fa-f0bb-48b7-8571-0f66279706f4
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: T
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'DAILY_14_TOTAL_SHORT') }}
+      name: DAILY_14_TOTAL_SHORT
+      schema: ""
+      sqlType: Source
+      table: DAILY_14_TOTAL_SHORT
+      type: sourceInput
+    stepCounter: 0b3b08fa-f0bb-48b7-8571-0f66279706f4
