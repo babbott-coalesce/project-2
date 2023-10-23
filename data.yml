@@ -31,7 +31,7 @@ stepTypes:
         create:
           templateString: wavasdf
         run:
-          templateString: ""
+          templateString: adsfvasdfasdfasdf
     name: bad type
     version: 1
   StepType-Dimension:

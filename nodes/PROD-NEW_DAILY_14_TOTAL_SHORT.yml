@@ -1,0 +1,61 @@
+steps:
+  NEW_DAILY_14_TOTAL_SHORT-8802a753-5b88-4912-b6ce-874f02360994:
+    operation:
+      config: {}
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: PROD
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 02671976-6b64-4e98-9893-11125aaf9027
+              stepCounter: 8802a753-5b88-4912-b6ce-874f02360994
+            dataType: VARIANT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: V
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 97b363ec-fd3a-48eb-ad83-9d35cfac6070
+                    stepCounter: 0b3b08fa-f0bb-48b7-8571-0f66279706f4
+                transform: ""
+          - columnReference:
+              columnCounter: f7f691e4-f026-44c2-a93f-042d3a33d460
+              stepCounter: 8802a753-5b88-4912-b6ce-874f02360994
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: T
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f120f843-09e7-419f-93ec-c4278795e3b4
+                    stepCounter: 0b3b08fa-f0bb-48b7-8571-0f66279706f4
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: DAILY_14_TOTAL_SHORT
+            join:
+              joinCondition: FROM {{ ref('SRC', 'DAILY_14_TOTAL_SHORT') }} "DAILY_14_TOTAL_SHORT"
+            name: NEW_DAILY_14_TOTAL_SHORT
+            noLinkRefs: []
+      name: NEW_DAILY_14_TOTAL_SHORT
+      overrideSQL: false
+      schema: ""
+      sqlType: "3"
+      type: sql
+      version: 1
+    stepCounter: 8802a753-5b88-4912-b6ce-874f02360994
